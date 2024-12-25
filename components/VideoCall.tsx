@@ -4,6 +4,7 @@ import AgoraRTC, {
     ClientConfig, 
     IAgoraRTCRemoteUser,
     ICameraVideoTrack,
+    ILocalTrack,
     IMicrophoneAudioTrack,
 } from 'agora-rtc-sdk-ng';
 import { RemoteUser, useRemoteUsers } from "agora-rtc-react";
@@ -123,7 +124,7 @@ const VideoCall: React.FC = () => {
             >
                 {isCameraOn ? 'Stop Camera' : 'Start Camera'}
             </button>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className={`grid grid-cols-2 gap-4`}>
                 {localTracks.length > 0 && (
                     <div className="border p-4 rounded">
                         <h3 className="text-xl mb-2">You (ID: {userId})</h3>
@@ -145,7 +146,7 @@ const VideoCall: React.FC = () => {
                     </div>
                 )}
                 
-                <div className="grid grid-cols-1 gap-4">
+                {/* <div className="grid grid-cols-1 gap-4"> */}
                     {Object.values(remoteUsers).map((user) => (
                         <div key={user.uid} className="border p-4 rounded">
                             <h3 className="text-xl mb-2">Remote User {user.uid}</h3>
@@ -168,9 +169,8 @@ const VideoCall: React.FC = () => {
                             </div>
                         </div>
                     )}
-                </div>
+                {/* </div> */}
             </div>
-            {/* Add button to start and stop camera */}
             
         </div>
     );
