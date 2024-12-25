@@ -1,10 +1,14 @@
+# Video Call App working video
+
 [![Watch the assingment video](https://github.com/user-attachments/assets/abe98599-c19c-477d-bca1-7c3d17c058cf)](https://www.youtube.com/watch?v=FP8WY1L01V8)
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Screenshots
 
 ![image](https://github.com/user-attachments/assets/abe98599-c19c-477d-bca1-7c3d17c058cf)
 ![image](https://github.com/user-attachments/assets/b9031564-d001-40ec-87e2-630469082078)
 
+
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 ## Getting Started
 
 First, run the development server:
